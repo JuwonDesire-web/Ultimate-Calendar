@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Modern Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ultimate Modern Calendar</h1>
+            <div class="nav">
+                <button id="prevMonth"><</button>
+                <h2 id="currentMonthYear"></h2>
+                <button id="nextMonth">></button>
+            </div>
+        </header>
+        <div class="calendar-container">
+            <div class="calendar">
+                <div class="weekdays">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+                <div class="days" id="days"></div>
+            </div>
+            <div class="sidebar">
+                <div class="section">
+                    <h3>Daily Tasks & Goals</h3>
+                    <textarea id="dailyTasks" placeholder="Write your tasks and goals here..."></textarea>
+                </div>
+                <div class="section">
+                    <h3>Reminders</h3>
+                    <textarea id="reminders" placeholder="Add reminders..."></textarea>
+                </div>
+                <div class="section">
+                    <h3>Notes</h3>
+                    <textarea id="notes" placeholder="Personal notes..."></textarea>
+                </div>
+                <div class="section">
+                    <h3>Important Dates</h3>
+                    <ul id="importantDates">
+                        <!-- Dynamic list -->
+                    </ul>
+                    <input type="text" id="newImportantDate" placeholder="Add important date">
+                    <button id="addImportantDate">Add</button>
+                </div>
+                <div class="section">
+                    <h3>Birthdays & Holidays</h3>
+                    <ul id="birthdaysHolidays">
+                        <!-- Dynamic list -->
+                    </ul>
+                    <input type="text" id="newBirthdayHoliday" placeholder="Add birthday or holiday">
+                    <button id="addBirthdayHoliday">Add</button>
+                </div>
+                <div class="section">
+                    <h3>Milestones</h3>
+                    <textarea id="milestones" placeholder="Track personal milestones..."></textarea>
+                </div>
+                <div class="section">
+                    <h3>Habit Tracking</h3>
+                    <div id="habits">
+                        <!-- Dynamic habits -->
+                    </div>
+                    <input type="text" id="newHabit" placeholder="Add new habit">
+                    <button id="addHabit">Add Habit</button>
+                </div>
+                <div class="section">
+                    <h3>Motivational Quote</h3>
+                    <p id="quote">“The only way to do great work is to love what you do.” – Steve Jobs</p>
+                    <button id="newQuote">New Quote</button>
+                </div>
+                <div class="section">
+                    <h3>Goal Setting</h3>
+                    <textarea id="goals" placeholder="Set your goals..."></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
